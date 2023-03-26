@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+html {
+  box-sizing: border-box;
+}
+
+:root {
+   --font-size-sm: clamp(0.83rem, 0.01vw + 0.83rem, 0.84rem);
+  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --font-size-md: clamp(1.2rem, 0.87vw + 0.98rem, 1.68rem);
+  --font-size-lg: clamp(1.44rem, 1.7vw + 1.02rem, 2.37rem);
+  --font-size-xl: clamp(1.73rem, 2.96vw + 0.99rem, 3.36rem);
+  --font-size-xxl: clamp(2.07rem, 4.86vw + 0.86rem, 4.75rem);
+  --font-size-xxxl: clamp(2.49rem, 7.68vw + 0.57rem, 6.71rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  background-color: #2A2B2C;
+}
+
+header {
+ background-color: #2A2B2C;
+ color: #FFF;
+}
+
+header .hero-header {
+  font-weight: 100;
+  font-size: var(--font-size-xxl);
+}
+
+header ul{
+  list-style-type: none;
+}
+
+header li a {
+  text-decoration: none;
+  color:#FFF;
+  display: flex;
+  justify-content: space-around;
+  margin-right: auto;
+  padding-bottom: 2.5em;
+}
+
+li {
+
+}
+
+p {
+  font-size: var(--font-size-base);
+  padding: 5em 25em;
+  text-align: center;
+  color: #FFF;
+}
+
+
+
+
+
+
+
+
+footer {
+  background-color: #636363;
+}
+
+footer p {
+  text-align: left;
+  font-size: var(--font-size-sm);
+  padding: 10em 15em;
+}
