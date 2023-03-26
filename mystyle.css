@@ -78,3 +78,8 @@ footer p {
   font-size: var(--font-size-sm);
   padding: 10em 15em;
 }
+
+footer cite {
+  font-weight: 100;
+  color: #FFF;
+}

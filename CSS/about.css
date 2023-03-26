@@ -32,3 +32,50 @@ header {
  background-color: #2A2B2C;
  color: #FFF;
 }
+
+header .hero-header {
+  font-weight: 100;
+  font-size: var(--font-size-xxl);
+}
+
+header ul{
+  list-style-type: none;
+}
+
+header li a {
+  text-decoration: none;
+  color:#FFF;
+  display: flex;
+  justify-content: space-around;
+  margin-right: auto;
+  padding-bottom: 2.5em;
+}
+
+p {
+  font-size: var(--font-size-base);
+  padding: 5em 25em;
+  text-align: center;
+  color: #FFF;
+}
+
+
+
+
+
+
+
+
+footer {
+  background-color: #636363;
+}
+
+footer p {
+  text-align: left;
+  font-size: var(--font-size-sm);
+  padding: 10em 15em;
+}
+
+footer cite {
+  font-weight: 100;
+  color: #FFF;
+}
