@@ -49,6 +49,7 @@ header li a {
   justify-content: space-around;
   margin-right: auto;
   padding-bottom: 2.5em;
+  text-transform: uppercase;
 }
 
 p {
@@ -70,7 +71,7 @@ footer {
 }
 
 footer p {
-  text-align: left;
+  text-align: center;
   font-size: var(--font-size-sm);
   padding: 10em 15em;
 }
@@ -78,4 +79,5 @@ footer p {
 footer cite {
   font-weight: 100;
   color: #FFF;
+  text-transform: uppercase;
 }
