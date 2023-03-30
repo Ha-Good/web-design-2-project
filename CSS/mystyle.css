@@ -52,13 +52,22 @@ header li a {
   text-transform: uppercase;
 }
 
+h2 {
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: var(--font-size-xxl);
+  font-weight: 200;
+  text-align: center;
+  padding: 2em;
+}
+
 li {
 
 }
 
 p {
   font-size: var(--font-size-base);
-  padding: 5em 25em;
+  padding: 0 5em;
   text-align: center;
   color: #FFF;
 }

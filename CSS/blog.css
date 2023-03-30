@@ -59,6 +59,29 @@ p {
   color: #FFF;
 }
 
+div {
+
+
+}
+
+h4 {
+  font-size: medium;
+  font-weight: 400;
+  color: #FFF;
+  font-style: italic;
+}
+
+div p {
+
+text-align: left;
+padding: 2em 2em;
+
+}
+
+button {
+  
+}
+
 
 
 
