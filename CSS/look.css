@@ -60,6 +60,33 @@ header li a {
   text-transform: uppercase;
 }
 
+li a {
+  
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+  text-align: center;
+  font-weight: 200;
+  color: #FFF;
+}
+
+.Steal-the-look-one p {
+  font-size: var(--font-size-base);
+  text-align: left;
+  padding: 3em;
+}
+
+.Steal-the-look-two p {
+  font-size: var(--font-size-base);
+  text-align: left;
+  padding: 3em;
+
+}
+
+button {
+  
+}
 
 
 
