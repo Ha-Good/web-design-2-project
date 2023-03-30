@@ -54,13 +54,24 @@ header li a {
 
 p {
   font-size: var(--font-size-base);
-  padding: 5em 25em;
-  text-align: center;
+  padding: 1em;
+  text-align: left;
   color: #FFF;
 }
 
+h2 {
+  font-size: var(--font-size-xl);
+  text-align: center;
+  font-weight: 200;
+  color: #FFF;
+}
 
+h3 {
 
+  font-size: var(--font-size-md);
+  font-weight: 400;
+  color: #FFF;
+}
 
 
 
