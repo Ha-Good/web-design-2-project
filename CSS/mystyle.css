@@ -61,23 +61,12 @@ h2 {
   padding: 2em;
 }
 
-li {
-
-}
-
 p {
   font-size: var(--font-size-base);
   padding: 0 5em;
   text-align: center;
   color: #FFF;
 }
-
-
-
-
-
-
-
 
 footer {
   background-color: #636363;

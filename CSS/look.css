@@ -60,10 +60,6 @@ header li a {
   text-transform: uppercase;
 }
 
-li a {
-  
-}
-
 h2 {
   font-size: var(--font-size-xl);
   text-align: center;
@@ -83,16 +79,6 @@ h2 {
   padding: 3em;
 
 }
-
-button {
-  
-}
-
-
-
-
-
-
 
 footer {
   background-color: #636363;
