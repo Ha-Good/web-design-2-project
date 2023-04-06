@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
-html {
-  box-sizing: border-box;
-}
 
 :root {
    --font-size-sm: clamp(0.83rem, 0.01vw + 0.83rem, 0.84rem);
@@ -15,9 +12,7 @@ html {
   --font-size-xxxl: clamp(2.49rem, 7.68vw + 0.57rem, 6.71rem);
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -31,11 +26,16 @@ body {
 header {
  background-color: #2A2B2C;
  color: #FFF;
+ /* position: fixed; */
 }
 
 header .hero-header {
   font-weight: 100;
   font-size: var(--font-size-xxl);
+}
+
+.main-nav {
+  position: relative;
 }
 
 .nav-toggle {
@@ -46,50 +46,51 @@ header .hero-header {
 
 .nav-toggle-label {
   position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
   display: flex;
   align-items: center;
   cursor: pointer;
+  z-index:10;
 }
 
-.nav-toggle-label span, 
-.nav-toggle-label span::before, 
+/* .nav-toggle-label span,
+.nav-toggle-label span::before,
 .nav-toggle-label span::after {
   display: block;
-  background: #FFF;
+  background: white;
   height: 2px;
   width: 2em;
-  border-radius: 5px;
+  border-radius: 2px;
   position: relative;
 }
 
-.nav-toggle-label span::before, 
+.nav-toggle-label span::before,
 .nav-toggle-label span::after {
   content: '';
   position: absolute;
 }
 
-.nav-toggle-span::before {
+.nav-toggle-label span::before {
   bottom: 7px;
 }
 
 .nav-toggle-label span::after {
   top: 7px;
-}
-
-.nav-toggle:focus ~ .nav-toggle-label {
-  outline: 3px solid #000;
-}
+} */
 
 nav {
   position: absolute;
-  text-align: center;
-  top: 100%;
+  text-align: left;
+  top: 50px;
   left: 0;
-  background: #2A2B2C;
+  background: rgba(0, 214, 200, .85);
   width: 100%;
   overflow: hidden;
   height: 0;
-  transform: scale(1,0);
+  transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
 }
@@ -97,7 +98,7 @@ nav {
 nav ul {
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
 }
 
 nav li {
@@ -106,25 +107,18 @@ nav li {
 }
 
 nav a {
-  color: #fff;
+  color: white;
   text-decoration: none;
-  font-size: var(--font-size-sm);
-  text-transform: uppercase;
-  opacity: 0;
-  transition: opacity 250ms ease-in-out 250ms;
+  font-size: 1.2rem;
 }
 
 nav a:hover {
-  color: #636363;
+  color: #000;
 }
 
 .nav-toggle:checked ~ nav {
   transform: scale(1,1);
   height: auto;
-}
-
-.nav-toggle:checked ~ nav a {
-  opacity: 1;
 }
 
 h2 {
