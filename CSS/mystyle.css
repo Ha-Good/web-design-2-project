@@ -46,8 +46,6 @@ header .hero-header {
 
 .nav-toggle-label {
   position: absolute;
-  top: 100;
-  left: 100;
   display: flex;
   align-items: center;
   cursor: pointer;
