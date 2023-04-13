@@ -29,9 +29,27 @@ header {
  /* position: fixed; */
 }
 
+.hero-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  z-index: 1;
+  z-index: -1;
+
+}
+
 header .hero-header {
   font-weight: 100;
   font-size: var(--font-size-xxl);
+}
+
+.banner-photo {
+  height: auto;
+  width: auto;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
 
 .main-nav {
@@ -54,6 +72,20 @@ header .hero-header {
   align-items: center;
   cursor: pointer;
   z-index:10;
+}
+
+.pagelogo {
+  display: block;
+  height: 200px;
+}
+
+.pagelogo-2 {
+  display: block;
+  height: 150px;
+}
+
+span {
+  text-align: center;
 }
 
 /* .nav-toggle-label span,
@@ -83,10 +115,10 @@ header .hero-header {
 
 nav {
   position: absolute;
-  text-align: left;
+  text-align: center;
   top: 50px;
   left: 0;
-  background: rgba(0, 214, 200, .85);
+  background: #7F6887;
   width: 100%;
   overflow: hidden;
   height: 0;

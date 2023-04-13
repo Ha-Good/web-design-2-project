@@ -33,6 +33,11 @@ header {
  color: #FFF;
 }
 
+.pagelogo {
+  display: block;
+  height: 200px;
+}
+
 header .hero-header {
   font-weight: 100;
   font-size: var(--font-size-xxl);
@@ -75,6 +80,11 @@ padding: 2em 2em;
 
 footer {
   background-color: #636363;
+}
+
+.pagelogo-2 {
+  display: block;
+  height: 150px;
 }
 
 footer p {
