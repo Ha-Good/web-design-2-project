@@ -43,19 +43,97 @@ header .hero-header {
   font-size: var(--font-size-xxl);
 }
 
-header ul{
-  list-style-type: none;
+.blog-nav {
+  position: relative;
 }
 
-header li a {
-  text-decoration: none;
-  color:#FFF;
-  display: flex;
-  justify-content: space-around;
-  margin-right: auto;
-  padding-bottom: 2.5em;
-  text-transform: uppercase;
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+span {
+  text-align: center;
+}
+
+/* .nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+} */
+
+nav {
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  left: 0;
+  background: #7F6887;
+  width: 100%;
+  overflow: hidden;
+  height: 0;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+  height: auto;
+}
+
 
 p {
   font-size: var(--font-size-base);
