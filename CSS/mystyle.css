@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -26,30 +30,29 @@ body {
 header {
  background-color: #2A2B2C;
  color: #FFF;
- /* position: fixed; */
 }
 
 .hero-banner {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-column: 1 / -1;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.hero-banner .banner-photo {
+  grid-row: 1;
+}
+
+.hero-banner .pagelogo {
   grid-row: 2;
-  z-index: 1;
-  z-index: -1;
-
+  align-self: center;
 }
 
-header .hero-header {
-  font-weight: 100;
-  font-size: var(--font-size-xxl);
-}
-
-.banner-photo {
-  height: auto;
-  width: auto;
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
+.hero-banner h1 {
+  font-weight: 200;
+  font-size: var(--font-size-xxxl);
+  color: #FFF;
+  grid-column: 1;
+  grid-row: 3;
 }
 
 .main-nav {
@@ -74,15 +77,7 @@ header .hero-header {
   z-index:10;
 }
 
-.pagelogo {
-  display: block;
-  height: 200px;
-}
 
-.pagelogo-2 {
-  display: block;
-  height: 150px;
-}
 
 span {
   text-align: center;
@@ -173,10 +168,18 @@ footer {
   background-color: #636363;
 }
 
+.social-links {
+  display: flex;
+  padding-bottom: 3em;
+  padding-top: 0em;
+}
+
+
+
 footer p {
   text-align: center;
   font-size: var(--font-size-sm);
-  padding: 10em 15em;
+  padding: 5em 1em;
 }
 
 footer cite {

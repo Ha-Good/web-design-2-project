@@ -21,6 +21,10 @@ html {
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -33,9 +37,27 @@ header {
  color: #FFF;
 }
 
-.pagelogo {
-  display: block;
-  height: 200px;
+.about-header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.about-header .banner-photo {
+  grid-row: 1;
+}
+
+.about-header .pagelogo {
+  grid-row: 2;
+}
+
+.about-header h1 {
+  padding: 2rem;
+  font-weight: 200;
+  font-size: var(--font-size-xxxl);
+  color: #FFF;
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .about-nav {
@@ -166,14 +188,20 @@ footer {
 }
 
 .pagelogo-2 {
-  display: block;
-  height: 150px;
+  display: flex;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 3em;
+  padding-top: 0em;
 }
 
 footer p {
   text-align: center;
   font-size: var(--font-size-sm);
-  padding: 10em 15em;
+  padding: 5em 1em;
 }
 
 footer cite {

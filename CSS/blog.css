@@ -21,6 +21,10 @@ html {
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -33,10 +37,6 @@ header {
  color: #FFF;
 }
 
-.pagelogo {
-  display: block;
-  height: 200px;
-}
 
 header .hero-header {
   font-weight: 100;
@@ -142,6 +142,15 @@ p {
   color: #FFF;
 }
 
+button {
+  padding: 1em;
+  background-color:#636363;
+  border-radius: 20px;
+  border-color: #636363;
+  color:#FFF;
+  font-size: var(--font-size-sm);
+}
+
 h4 {
   font-size: medium;
   font-weight: 400;
@@ -160,15 +169,18 @@ footer {
   background-color: #636363;
 }
 
-.pagelogo-2 {
-  display: block;
-  height: 150px;
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 3em;
+  padding-top: 0em;
 }
+
 
 footer p {
   text-align: center;
   font-size: var(--font-size-sm);
-  padding: 10em 15em;
+  padding: 5em 1em;
 }
 
 footer cite {
