@@ -37,15 +37,40 @@ header {
  color: #FFF;
 }
 
-
-header .hero-header {
-  font-weight: 100;
-  font-size: var(--font-size-xxl);
+.pagelogo {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  width: 150px;
 }
 
-.blog-nav {
-  position: relative;
+
+
+.hero-banner {
+  display: grid;
+  grid-template-columns: 1fr;
 }
+
+.hero-banner .banner-photo {
+  grid-row: 2;
+}
+
+.hero-banner .pagelogo {
+  grid-row: 1;
+}
+
+.hero-banner h1 {
+  font-weight: 200;
+  font-size: var(--font-size-xxxl);
+  color: #FFF;
+  text-align: center;
+  grid-column: 1;
+}
+
+ .blog-nav {
+  grid-row: 1;
+}
+
 
 .nav-toggle {
   position: absolute !important;
@@ -135,12 +160,22 @@ nav a:hover {
 }
 
 
+
+
 p {
   font-size: var(--font-size-base);
   padding: 5em 25em;
   text-align: center;
   color: #FFF;
 }
+
+
+.blog-posts article {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 5em;
+}
+
 
 button {
   padding: 1em;
@@ -152,28 +187,42 @@ button {
 }
 
 h4 {
-  font-size: medium;
+  font-size: var(--font-size-md);
   font-weight: 400;
   color: #FFF;
   font-style: italic;
+  text-align: center;
 }
 
 div p {
-
 text-align: left;
 padding: 2em 2em;
-
 }
 
 footer {
   background-color: #636363;
 }
 
-.social-links {
+.pagelogo-2 {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+}
+
+.social-png {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
   padding-bottom: 3em;
   padding-top: 0em;
+}
+
+.social-png img {
+  height: 50px;
+  width: 50px;
 }
 
 

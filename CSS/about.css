@@ -37,31 +37,36 @@ header {
  color: #FFF;
 }
 
-.about-header {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+.pagelogo {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  width: 150px;
 }
 
-.about-header .banner-photo {
+.hero-banner {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.hero-banner .banner-photo {
+  grid-row: 2;
+}
+
+.hero-banner .pagelogo {
   grid-row: 1;
 }
 
-.about-header .pagelogo {
-  grid-row: 2;
-}
-
-.about-header h1 {
-  padding: 2rem;
+.hero-banner h1 {
   font-weight: 200;
   font-size: var(--font-size-xxxl);
   color: #FFF;
+  text-align: center;
   grid-column: 1;
-  grid-row: 2;
 }
 
 .about-nav {
-  position: relative;
+  grid-row: 1;
 }
 
 .nav-toggle {
@@ -187,21 +192,33 @@ footer {
   background-color: #636363;
 }
 
-.pagelogo-2 {
-  display: flex;
-}
 
-.social-links {
+.social-png {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
   padding-bottom: 3em;
   padding-top: 0em;
 }
 
+.social-png img {
+  height: 50px;
+  width: 50px;
+}
+
 footer p {
   text-align: center;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
   padding: 5em 1em;
+}
+
+.pagelogo-2 {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  width: 150px;
 }
 
 footer cite {
