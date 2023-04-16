@@ -63,6 +63,8 @@ header {
 
  .main-nav {
   grid-row: 1;
+  align-self: start;
+  justify-self: start;
 }
 
 
