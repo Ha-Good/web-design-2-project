@@ -184,3 +184,43 @@ footer cite {
   color: #FFF;
   text-transform: uppercase;
 }
+
+@media screen and (min-width: 38em){
+
+.nav-toggle-label, .nav-toggle, .nav-toggle:checked {
+  display: none;
+}
+
+.main-nav {
+  display: block;
+}
+
+.Image-Front-Page {
+  display: flex;
+}
+
+.Image-Front-Page-Block-2 {
+  display: flex;
+  padding-bottom: 2em;;
+}
+
+.banner-photo {
+  max-height: fit-content;
+}
+
+}
+
+@media screen and (min-width: 60em) {
+
+.pagelogo-2 {
+  display: none;
+}
+
+.nav-toggle-label, .nav-toggle, .nav-toggle:checked {
+  display: none;
+}
+
+
+}
+
+
