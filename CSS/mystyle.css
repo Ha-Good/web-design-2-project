@@ -47,6 +47,7 @@ header {
 
 .hero-banner .banner-photo {
   grid-row: 2;
+  grid-column: 1 / 2;
 }
 
 .hero-banner .pagelogo {
@@ -76,13 +77,10 @@ header {
 }
 
 .nav-toggle-label {
-  position: absolute;
-  top: 0;
-  left: 0;
+  padding-right: 1em;
   margin-left: 1em;
   height: 100%;
   display: flex;
-  align-items: center;
   cursor: pointer;
   z-index:10;
 }
