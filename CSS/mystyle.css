@@ -68,8 +68,6 @@ header {
   justify-self: start;
 }
 
-
-
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;
@@ -84,7 +82,6 @@ header {
   cursor: pointer;
   z-index:10;
 }
-
 
 nav {
   position: absolute;
@@ -133,6 +130,12 @@ h2 {
   font-weight: 200;
   text-align: center;
   padding: 2em;
+}
+
+.Image-Front-Page, .Image-Front-Page-Block-2 {
+  display: flex;
+  flex-direction: column;
+  
 }
 
 p {
@@ -191,13 +194,14 @@ footer cite {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 38em){
+@media screen and (min-width: 45em){
 
+ 
 
-
-.main-nav {
-  display: block;
-}
+  .nav-toggle-label, .nav-toggle, .nav-toggle:checked {
+    display: none;
+  }
+  
 
 .Image-Front-Page {
   display: flex;
@@ -212,6 +216,15 @@ footer cite {
 
 .banner-photo {
   max-height: fit-content;
+}
+
+nav {
+  position: relative;
+  height: 2rem;
+  overflow: visible;
+  transform: none;
+  transition: none;
+  display: flex; 
 }
 
 }
@@ -243,6 +256,16 @@ footer cite {
 .foot-content p {
   text-align: left;
 }
+
+nav {
+  position: relative;
+  height: 2rem;
+  overflow: visible;
+  display: flex;
+  transform: none;
+  transition: none;
+}
+
 
 }
 

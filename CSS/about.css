@@ -165,7 +165,8 @@ header .hero-header {
 
 p {
   font-size: var(--font-size-base);
-  padding: 1em;
+  padding: 2em;
+  padding-top: 0em;
   text-align: left;
   color: #FFF;
 }
@@ -177,14 +178,16 @@ h2 {
   color: #FFF;
 }
 
-h3 {
 
-  font-size: var(--font-size-md);
-  font-weight: 400;
-  color: #FFF;
+.about-the-star {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-
+.about-the-team {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
 
 
@@ -215,8 +218,6 @@ footer p {
 }
 
 .pagelogo-2 {
-  height: 150px;
-  width: 150px;
   align-content: center;
 }
 
@@ -238,10 +239,60 @@ footer p {
 }
 
 
-
-
 footer cite {
   font-weight: 100;
   color: #FFF;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 40em) {
+
+
+h2 {
+  text-align: left;
+  padding-left: 1em;
+ }
+
+.about-the-star, .about-the-team {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.about-the-team  p {
+  grid-column: 2;
+}
+
+.about-the-team, .about-the-star img {
+  padding: 1em;
+}
+
+nav { 
+  display: flex;
+}
+
+}
+
+@media screen and (min-width: 60em) {
+  
+  .pagelogo-2 {
+    display: none;
+  }
+  
+  .nav-toggle-label, .nav-toggle, .nav-toggle:checked {
+    display: none;
+  }
+  
+  .foot-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .foot-content p {
+    text-align: left;
+  }
+
 }
