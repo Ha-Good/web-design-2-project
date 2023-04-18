@@ -62,7 +62,7 @@ header {
   font-weight: 200;
   font-size: var(--font-size-xxxl);
   color: #FFF;
-  text-align: center;
+  text-align: left;
   grid-column: 1;
 }
 
@@ -96,31 +96,6 @@ header .hero-header {
 span {
   text-align: center;
 }
-
-/* .nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background: white;
-  height: 2px;
-  width: 2em;
-  border-radius: 2px;
-  position: relative;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: '';
-  position: absolute;
-}
-
-.nav-toggle-label span::before {
-  bottom: 7px;
-}
-
-.nav-toggle-label span::after {
-  top: 7px;
-} */
 
 nav {
   position: absolute;
@@ -165,7 +140,6 @@ nav a:hover {
 
 p {
   font-size: var(--font-size-base);
-  padding: 5em 25em;
   text-align: center;
   color: #FFF;
 }
@@ -176,6 +150,19 @@ h2 {
   font-weight: 200;
   color: #FFF;
 }
+
+.Intro-looks {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1em 10em;
+
+}
+
+.Steal-the-look-one, .Steal-the-look-two {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 
 .Steal-the-look-one p {
   font-size: var(--font-size-base);
@@ -191,12 +178,20 @@ h2 {
 }
 
 button {
-  padding: 1em;
+  padding: 2em;
   background-color:#636363;
   border-radius: 20px;
   border-color: #636363;
   color:#FFF;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
+}
+
+.one-button, .two-button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 2em;
 }
 
 footer {
@@ -246,13 +241,6 @@ footer p {
   width: 50px;
 }
 
-
-footer p {
-  text-align: center;
-  font-size: var(--font-size-sm);
-  padding: 5em 1em;
-}
-
 .pagelogo-2 {
   height: 150px;
   width: 150px;
@@ -262,4 +250,44 @@ footer cite {
   font-weight: 100;
   color: #FFF;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 40em){
+
+  nav 
+
+}
+
+@media screen and (min-width: 60em) {
+  .Steal-the-look-one, .Steal-the-look-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .one-button, .two-button {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    gap: 20px;
+
+  }
+
+  .pagelogo-2 {
+    display: none;
+  }
+
+  .foot-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .foot-content p {
+    text-align: left;
+  }
+
 }
