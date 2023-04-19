@@ -58,7 +58,7 @@ header {
   font-weight: 200;
   font-size: var(--font-size-xxxl);
   color: #FFF;
-  text-align: center;
+  text-align: left;
   grid-column: 1;
 }
 
@@ -185,7 +185,7 @@ footer {
 footer p {
   text-align: center;
   font-size: var(--font-size-md);
-  padding: 5em 1em;
+  padding: 2em 1em;
 }
 
 footer cite {
@@ -196,10 +196,13 @@ footer cite {
 
 @media screen and (min-width: 45em){
 
- 
-
   .nav-toggle-label, .nav-toggle, .nav-toggle:checked {
     display: none;
+  }
+
+  .social-png img {
+    display: flex;
+    justify-content: space-between;
   }
   
 
@@ -255,6 +258,14 @@ nav {
 
 .foot-content p {
   text-align: left;
+}
+
+.social-png {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 2em;
 }
 
 nav {

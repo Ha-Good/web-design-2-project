@@ -247,7 +247,6 @@ footer cite {
 .blog-posts p {
   display: contents;
   font-size: var(--font-size-sm);
-
 }
 
 @media screen and (min-width: 60em){
@@ -275,5 +274,3 @@ footer cite {
 }
 
 }
-
-
