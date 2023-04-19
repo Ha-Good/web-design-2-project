@@ -143,8 +143,12 @@ p {
 .blog-posts article {
   display: grid;
   grid-template-columns: 1fr;
-  padding-bottom: 5em;
   background-color: #7F6887;
+  border-radius: 50px;
+}
+
+.blog-posts img {
+  border-radius: 20px;
 }
 
 
@@ -243,7 +247,6 @@ footer cite {
 .blog-posts p {
   display: contents;
   font-size: var(--font-size-sm);
-}
 
 }
 
