@@ -139,18 +139,14 @@ p {
   color: #FFF;
 }
 
-.blog-posts {
-  gap: 20px;
-}
-
 
 .blog-posts article {
   display: grid;
   grid-template-columns: 1fr;
   background-color: #7F6887;
   border-radius: 50px;
+  gap: 20px;
 }
-
 
 .blog-posts img {
   border-radius: 20px;
