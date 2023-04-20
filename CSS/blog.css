@@ -236,17 +236,24 @@ footer cite {
 }
 
 @media screen and (min-width: 45em){
-.blog-posts {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  padding-bottom: 3em;
-}
 
-.blog-posts p {
-  display: contents;
-  font-size: var(--font-size-sm);
+  .blog-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding-bottom: 3em;
+  }
+  
+  .blog-posts p {
+    display: contents;
+    font-size: var(--font-size-sm);
+  }
+  
+  .foot-content {
+    padding: 2em;
+  }
+  
 }
 
 @media screen and (min-width: 60em){
@@ -263,6 +270,7 @@ footer cite {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
+  padding: 1em;
 }
 
 .foot-content p {

@@ -222,7 +222,6 @@ footer cite {
 
 @media screen and (min-width: 40em) {
 
-
 h2 {
   text-align: left;
   padding-left: 1em;
@@ -246,6 +245,10 @@ nav {
   display: flex;
 }
 
+.foot-content {
+  padding: 2em;
+}
+
 }
 
 @media screen and (min-width: 60em) {
@@ -264,6 +267,7 @@ nav {
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
+    padding: 1em;
   }
   
   .foot-content p {

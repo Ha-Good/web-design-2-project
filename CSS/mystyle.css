@@ -200,9 +200,9 @@ footer cite {
     display: none;
   }
 
-  .social-png img {
-    display: flex;
-    justify-content: space-between;
+.social-png img {
+  display: flex;
+  justify-content: space-between;
   }
   
 
@@ -219,6 +219,10 @@ footer cite {
 
 .banner-photo {
   max-height: fit-content;
+}
+
+.foot-content {
+  padding: 2em;
 }
 
 nav {
@@ -254,6 +258,7 @@ nav {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
+  padding: 1em;
 }
 
 .foot-content p {
