@@ -297,4 +297,11 @@ footer cite {
     text-align: left;
   }
 
+  .social-png {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+  }
+
 }

@@ -139,6 +139,10 @@ p {
   color: #FFF;
 }
 
+.blog-posts {
+  gap: 20px;
+}
+
 
 .blog-posts article {
   display: grid;
@@ -146,6 +150,7 @@ p {
   background-color: #7F6887;
   border-radius: 50px;
 }
+
 
 .blog-posts img {
   border-radius: 20px;
@@ -247,13 +252,13 @@ footer cite {
   
   .blog-posts p {
     display: contents;
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
   }
   
   .foot-content {
     padding: 2em;
   }
-  
+
 }
 
 @media screen and (min-width: 60em){
@@ -279,6 +284,13 @@ footer cite {
 
 .pagelogo-2 {
   display: none;
+}
+
+.social-png {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
 }
 
 }
